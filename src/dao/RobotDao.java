@@ -25,7 +25,10 @@ public class RobotDao {
 		List<Robot> robots = new ArrayList<Robot>();
 		
 		while(rs.next()) {
-			robots.add(populateRobot(rs.getInt(1), rs.getString(2)));
+			int id = rs.getInt(1);
+			String name = rs.getString(2);
+			Robot new1 = new Robot(id, name);
+			robots.add(new1);
 		}
 	System.out.println();
 		return robots;

@@ -35,6 +35,8 @@ import entity.Robot;
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
+				}finally {
+					System.out.println("finally");
 				}
 				
 				System.out.println("press enter to continue...");

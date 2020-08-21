@@ -10,13 +10,11 @@ public class Robot {
 	}
 
 	private void setName(String name) {
-		// TODO Auto-generated method stub
-		
+		this.name = name;
 	}
 
 	private void setRobotId(int robotId) {
-		// TODO Auto-generated method stub
-		
+		this.robotId = robotId;
 	}
 
 	public int getRobotId() {
